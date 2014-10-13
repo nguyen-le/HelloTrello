@@ -2,6 +2,14 @@
 
 <form action="/session" method="post">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <input name="user[email]" type="hidden" value="guest">
+    <input name="user[password]" type="hidden" value="apples">
+  <input type="submit" value="Guest Login" class="btn btn-success"><br>
+</form>
+
+<br>
+<form action="/session" method="post">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   <label>Email<br>
     <input name="user[email]" type="text"><br>
   </label><br>
@@ -10,4 +18,3 @@
   </label><br>
   <input type="submit" value="Submit" class="btn btn-primary"><br>
 </form>
-
