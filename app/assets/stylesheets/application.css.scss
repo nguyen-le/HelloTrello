@@ -1,0 +1,92 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap";
+
+.nav-gradient {
+  margin: 0;
+  border: 0;
+background-image: -webkit-gradient(
+  linear,
+  left bottom,
+  left top,
+  color-stop(0.05, #030303),
+  color-stop(0.84, #949494),
+  color-stop(1, #8C8C8C)
+);
+background-image: -o-linear-gradient(top, #030303 5%, #949494 84%, #8C8C8C 100%);
+background-image: -moz-linear-gradient(top, #030303 5%, #949494 84%, #8C8C8C 100%);
+background-image: -webkit-linear-gradient(top, #030303 5%, #949494 84%, #8C8C8C 100%);
+background-image: -ms-linear-gradient(top, #030303 5%, #949494 84%, #8C8C8C 100%);
+background-image: linear-gradient(to top, #030303 5%, #949494 84%, #8C8C8C 100%);
+}
+
+
+.board-index {
+  background: aliceblue url("dark-pattern-logo.png");
+  background-size: cover;
+  border-radius: 10px;
+  height: 50px;
+  width: 200px;
+  margin: 1%;
+}
+
+.board-index:hover {
+  border: 5px solid gray;
+}
+
+.board-index:hover > span {
+  line-height: 40px;
+}
+
+.board-index > span {
+  line-height: 50px;
+}
+.board-link {
+  height: 50px;
+  width: 200px;
+  color: aliceblue;
+  font-size: 1.2em;
+}
+
+.board-link:hover {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.dark-logo {
+  background: url("dark-pattern.png");
+}
+
+.list {
+  background: #f5f5f5;
+  paddingz: 10px;
+  border-radius: 5px;
+  width: 270px;
+  float:left;
+  margin: 5px;
+}
+
+.list > h4 {
+  background: darkgray;
+  border-radius: 5px 5px 0 0;
+  padding: 5px;
+  margin: 0;
+  marginz: 0px 0px 5px 0px;
+}
+
+#main {
+}

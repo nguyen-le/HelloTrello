@@ -2,6 +2,8 @@ class User < ActiveRecord::Base
   attr_reader :password
 
   has_many :boards
+  has_many :card_assignments
+  has_many :board_memberships
 
   validates :email, :session_token, presence: true
   validates :password, length: { minimum: 6, allow_nil: true }
@@ -16,10 +18,6 @@ class User < ActiveRecord::Base
 
   def ensure_session_token
     self.session_token ||= SecureRandom.urlsafe_base64(16)
-  end
-
-  def gravatar_url
-    "http://www.gravatar.com/avatar/#{ Digest::MD5.hexdigest(email) }"
   end
 
   def is_password?(password)
