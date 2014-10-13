@@ -16,25 +16,6 @@
 
 @import "bootstrap";
 
-.nav-gradient {
-  margin: 0;
-  border: 0;
-background-image: -webkit-gradient(
-  linear,
-  left bottom,
-  left top,
-  color-stop(0.05, #030303),
-  color-stop(0.84, #949494),
-  color-stop(1, #8C8C8C)
-);
-background-image: -o-linear-gradient(top, #030303 5%, #949494 84%, #8C8C8C 100%);
-background-image: -moz-linear-gradient(top, #030303 5%, #949494 84%, #8C8C8C 100%);
-background-image: -webkit-linear-gradient(top, #030303 5%, #949494 84%, #8C8C8C 100%);
-background-image: -ms-linear-gradient(top, #030303 5%, #949494 84%, #8C8C8C 100%);
-background-image: linear-gradient(to top, #030303 5%, #949494 84%, #8C8C8C 100%);
-}
-
-
 .board-index {
   background: aliceblue url("dark-pattern-logo.png");
   background-size: cover;

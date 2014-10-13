@@ -8,6 +8,3 @@ window.HelloTrello = {
   }
 };
 
-$(document).ready(function(){
-  HelloTrello.initialize();
-});
