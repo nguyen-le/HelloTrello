@@ -4,7 +4,8 @@ window.HelloTrello = {
   Views: {},
   Routers: {},
   initialize: function() {
-    alert('Hello from Backbone!');
+      HelloTrello.boards = new HelloTrello.Collections.Boards();
+      new HelloTrello.Routers.Boards($('#main', '.backdrop'));
+      Backbone.history.start();
   }
 };
-

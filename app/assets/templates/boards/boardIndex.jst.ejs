@@ -1,0 +1,21 @@
+<div class="text-left">
+  <h2>My Boards</h2>
+</div>
+<br />
+<div>
+</div>
+<div class="row">
+  <% boards.each( function(board) { %>
+     <a class="board-link" href="#/boards/<%= board.id  %>">
+     <div class="text-center col-xs-3 board-index">
+       <span><%= board.escape("title") %></span>
+    </div>
+    </a>
+  <%  })  %>
+  
+  <a class="board-link" href="#boards/new">
+  <div class="text-center col-xs-3 board-index">
+    <span class="glyphicon glyphicon-plus"></span>
+  </div>
+  </a>
+</div>
