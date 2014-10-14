@@ -16,6 +16,21 @@
 
 @import "bootstrap";
 
+body {
+  background-color: #23719F;
+}
+#nav-name {
+  color:white;
+  background-color: #3b6d86;
+  border-radius: 5px;
+  margin: 8px;
+  height: 32px;
+}
+
+#navtop {
+  background-color: rgba(0,0,0,0.15);
+}
+
 .board-index {
   background-color: #23719F;
   background-size: cover;
@@ -48,10 +63,6 @@
   text-decoration: none;
 }
 
-.dark-logo {
-  background: url("dark-pattern.png");
-}
-
 .list {
   background: #f5f5f5;
   paddingz: 10px;
@@ -69,5 +80,13 @@
   marginz: 0px 0px 5px 0px;
 }
 
+.navbar-default {
+  border: 0;
+}
+
 #main {
+}
+
+ul.nav li {
+  margin-left: 10px;
 }

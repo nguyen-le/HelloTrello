@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require underscore
 //= require backbone
+//= require bootstrap
 //= require hello_trello
 //= require_tree ../templates
 //= require_tree ./utils
