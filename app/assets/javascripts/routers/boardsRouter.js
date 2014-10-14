@@ -10,6 +10,7 @@ HelloTrello.Routers.Boards = Backbone.Router.extend({
     },
 
     index: function() {
+        $("body").css("background-color", "white");
         HelloTrello.boards.fetch();
         var view = new HelloTrello.Views.BoardsIndex({ collection: HelloTrello.boards});
         this._swapView(view);
@@ -25,6 +26,7 @@ HelloTrello.Routers.Boards = Backbone.Router.extend({
     },
 
     show: function (id) {
+        $("body").css("background-color", "#23719F");
         var board = HelloTrello.boards.getOrFetch(id);
         var view  = new HelloTrello.Views.BoardShow({ model: board });
         this._swapView(view);

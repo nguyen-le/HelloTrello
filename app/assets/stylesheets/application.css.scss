@@ -28,29 +28,34 @@ body {
 }
 
 #navtop {
-  background-color: rgba(0,0,0,0.15);
+  background: linear-gradient(to bottom, #27709B 0px, #206288 100%) repeat scroll 0% 0% transparent;
+  background-colorz: #1A5B80;
 }
 
 .board-index {
   background-color: #23719F;
   background-size: cover;
-  border-radius: 10px;
-  height: 50px;
-  width: 200px;
+  border-radius: 5px;
+  height: 100px;
+  width: 250px;
   margin: 1%;
-}
-
-.board-index:hover {
-  border: 5px solid gray;
-}
-
-.board-index:hover > span {
-  line-height: 40px;
+  &:hover {
+    background-color: #1a5b80;
+  }
 }
 
 .board-index > span {
   line-height: 50px;
 }
+
+.board-index-new {
+  background-color: rgb(220, 220, 220);
+  color: rgb(120, 120, 120);
+  &:hover {
+    background-color: rgb(210, 210, 210);
+  }
+}
+
 .board-link {
   height: 50px;
   width: 200px;
