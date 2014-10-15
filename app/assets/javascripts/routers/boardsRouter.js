@@ -17,6 +17,7 @@ HelloTrello.Routers.Boards = Backbone.Router.extend({
     },
 
     newBoard: function () {
+        $("body").css("background-color", "white");
         var newBoard = new HelloTrello.Models.Board();
         var view     = new HelloTrello.Views.BoardNew({
             model:      newBoard,

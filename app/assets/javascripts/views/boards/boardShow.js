@@ -8,9 +8,6 @@ HelloTrello.Views.BoardShow = Backbone.CompositeView.extend({
         this.listenTo( this.model, "sync", this.render );
     },
 
-    events: {
-    },
-
     render: function () {
         var content = this.template({ board: this.model });
         this.$el.html(content);

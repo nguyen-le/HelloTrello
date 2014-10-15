@@ -5,10 +5,11 @@ HelloTrello.Views.BoardNew = Backbone.CompositeView.extend({
     },
 
     events: {
-        "submit #create-board": "evAddBoard"
+        "submit #create-board": "addBoard"
     },
 
-    evAddBoard: function() {
+    addBoard: function(event) {
+        console.log("submtting");
         event.preventDefault();
         var formData = $("#create-board").serializeJSON();
         this.model.save(formData, {

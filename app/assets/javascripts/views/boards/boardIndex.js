@@ -7,7 +7,6 @@ HelloTrello.Views.BoardsIndex = Backbone.CompositeView.extend({
     },
 
     events: {
-
     },
 
     render: function() {
