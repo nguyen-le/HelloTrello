@@ -5,9 +5,9 @@ b1 = u1.boards.create(title: 'Workout')
 b2 = u1.boards.create(title: 'Jamaica')
 b3 = u2.boards.create(title: 'Bouncy')
 
-l1 = b1.lists.create(title: 'todo')
-l2 = b1.lists.create(title: 'doing')
-l3 = b1.lists.create(title: 'done')
+l1 = b1.lists.create(title: 'todo', ord: 0.0)
+l2 = b1.lists.create(title: 'doing', ord: 0.5)
+l3 = b1.lists.create(title: 'done', ord: 1.0)
 
 c1 = l3.cards.create(title: 'squats', description: 'feel the burn')
 c2 = l3.cards.create(title: 'pushups', description: 'ooh ouch')
@@ -28,9 +28,9 @@ i3 = c1.items.create(done: true, title: 'cookie')
 b1.members = [u2]
 b1.save
 
-l1 = b2.lists.create(title: 'todo', ord: 0.0)
+l1 = b2.lists.create(title: 'todo' , ord: 0.0)
 l2 = b2.lists.create(title: 'doing', ord: 0.5)
-l3 = b2.lists.create(title: 'done', ord: 1.0)
+l3 = b2.lists.create(title: 'done' , ord: 1.0)
 
 c1 = l3.cards.create(title: 'buy ticket', description: 'feel the burn')
 c2 = l3.cards.create(title: 'buy luggage', description: 'ooh ouch')
