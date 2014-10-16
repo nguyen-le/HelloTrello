@@ -1,6 +1,8 @@
 HelloTrello.Routers.Boards = Backbone.Router.extend({
     initialize: function(rootEl) {
         this.$rootEl = rootEl;
+        $body = $('body');
+        bodyCss = $body[0].style;
     },
 
     routes: {
@@ -10,14 +12,14 @@ HelloTrello.Routers.Boards = Backbone.Router.extend({
     },
 
     index: function() {
-        $("body").css("background-color", "white");
+        bodyCss.backgroundColor = "white";
         HelloTrello.boards.fetch();
         var view = new HelloTrello.Views.BoardsIndex({ collection: HelloTrello.boards});
         this._swapView(view);
     },
 
     newBoard: function () {
-        $("body").css("background-color", "white");
+        bodyCss.backgroundColor = "white";
         var newBoard = new HelloTrello.Models.Board();
         var view     = new HelloTrello.Views.BoardNew({
             model:      newBoard,
@@ -27,7 +29,7 @@ HelloTrello.Routers.Boards = Backbone.Router.extend({
     },
 
     show: function (id) {
-        $("body").css("background-color", "#23719F");
+        bodyCss.backgroundColor = "#23719F";
         var board = HelloTrello.boards.getOrFetch(id);
         var view  = new HelloTrello.Views.BoardShow({ model: board });
         this._swapView(view);

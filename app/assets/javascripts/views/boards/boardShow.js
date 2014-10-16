@@ -2,9 +2,7 @@ HelloTrello.Views.BoardShow = Backbone.CompositeView.extend({
     template: JST["boards/boardShow"],
 
     initialize: function() {
-        $('body').removeClass();
-        $('body').addClass('dark-logo');
-
+        this.collection = this.model.lists();
         this.listenTo( this.model, "sync", this.render );
     },
 

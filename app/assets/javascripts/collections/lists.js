@@ -1,5 +1,6 @@
 HelloTrello.Collections.Lists = Backbone.Collection.extend({
     model: HelloTrello.Models.List,
+    comparator: 'ord',
 
     initialize: function(models, options) {
         this.board = options.board;
