@@ -17,8 +17,9 @@
 @import "bootstrap";
 
 body {
-  background-color: #23719F;
+  background-color: white;
 }
+
 #nav-name {
   color:white;
   background-color: #3b6d86;
@@ -94,4 +95,8 @@ body {
 
 ul.nav li {
   margin-left: 10px;
+}
+
+#header-links a {
+  color: gainsboro;
 }
