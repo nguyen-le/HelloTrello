@@ -12,6 +12,7 @@ HelloTrello.Views.BoardShow = Backbone.CompositeView.extend({
         var content = this.template({ board: this.model });
         this.$el.html(content);
         this.attachSubviews();
+        $('.lists').sortable();
         return this;
     },
 

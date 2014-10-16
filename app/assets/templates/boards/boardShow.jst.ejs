@@ -1,5 +1,6 @@
 <h2 style="color:gainsboro"><%= board.get("title") %> <a href="#list/new"><span class="glyphicon glyphicon-plus" style="font-size:.7em"></span></a></h2>
 
+<div class="lists">
 <% board.lists().each( function(list) { %>
   <div class="list">
      <h4><%= list.escape("title") %></h4>
@@ -10,6 +11,7 @@
      </ul>
   </div>
 <% }) %>
+</div>
 
 <div id="lists">
 
