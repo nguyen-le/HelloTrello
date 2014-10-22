@@ -1,10 +1,6 @@
 HelloTrello.Views.ListNew = Backbone.CompositeView.extend({
     className: "list",
     template: JST["lists/new"],
-
-    event: {
-        "submit form": "createList",
-    },
     createList: function(event) {
         event.preventDefault();
         alert("creating list");
