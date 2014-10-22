@@ -14,7 +14,8 @@ HelloTrello.Views.BoardShow = Backbone.CompositeView.extend({
         this.addSubview( ".lists", view );
     },
     listNew: function() {
-        alert("new list");
+        var view = new HelloTrello.Views.ListNew();
+        this.addSubview( ".lists", view );
     },
     render: function () {
         var content = this.template({ board: this.model });

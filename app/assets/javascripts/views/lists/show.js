@@ -1,4 +1,5 @@
 HelloTrello.Views.ListShow = Backbone.CompositeView.extend({
+    className: "list",
     template: JST["lists/show"],
 
     initialize: function() {
